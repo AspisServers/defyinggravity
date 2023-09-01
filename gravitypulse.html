@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defying Gravity - Gravity Pulse</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>  * {font-family: 'Roboto', sans-serif !important;}navbar {margin-bottom:2rem;}
+        .powered-by-bulma {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .powered-by-bulma a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .bulma-logo {
+      display: inline-block;
+      width: 7rem;
+      height: 7rem;
+      background: url('https://bulma.io/images/made-with-bulma.png') no-repeat;
+      background-size: contain;
+      margin-left: 8px;
+    }</style>
+</head>
+<body>
+    <nav data-aos="fade-right"class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            Defying Gravity
+          </a>
+    
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navOpen">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+    
+        <div id="navOpen" class="navbar-menu"data-aos="fade-down">
+          <div class="navbar-start">
+            <a class="navbar-item" href="violetai.html">
+              VioletAI
+              </a>
+              <a class="navbar-item" href="codemosaic.html">
+              Code Mosaic/ Web Mosaic
+              </a>
+              <a class="navbar-item" href="gravitypulse.html">
+            Gravity Pulse
+            </a>
+            <a class="navbar-item" href="index.html">
+              Home
+              </a>
+              
+          </div>
+        </div>
+      </nav>
+    <!-- Gravity Pulse Section -->
+<section class="section" data-aos="fade-up">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-2">Gravity Pulse: Your Gateway to GUI Development</h2>
+          <p class="subtitle">
+            Gravity Pulse is a dynamic programming language tailored for crafting captivating Graphical User Interfaces (GUIs). It empowers developers to create visually stunning and interactive applications with ease.
+          </p>
+          <p>
+            With Gravity Pulse, you can:
+          </p>
+          <ul>
+            <li>Design intuitive user interfaces using a simple and expressive syntax.</li>
+            <li>Create cross-platform applications that run seamlessly on various operating systems.</li>
+            <li>Effortlessly integrate animations, visual effects, and user interactions into your projects.</li>
+            <li>Access a rich library of GUI components to streamline your development process.</li>
+          </ul>
+          <p>
+            Gravity Pulse redefines GUI programming, making it accessible to both seasoned developers and newcomers to the world of graphical application development.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <hr data-aos="fade-up">
+  <!-- Gravity Pulse Estimated Release Date Section -->
+<section class="section" data-aos="fade-up">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-2">Gravity Pulse Estimated Release Date</h2>
+          <p class="subtitle">
+            We're excited to share that the anticipated release of Gravity Pulse is just around the corner!
+          </p>
+          <p>
+            Mark your calendars and stay tuned for the official launch of Gravity Pulse. We're committed to providing you with a powerful GUI programming language that will simplify your interface design and application development.
+          </p>
+          <p class="has-text-weight-bold">Estimated Release Date: Mid 2026 to Mid 2027</p>
+
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <footer class="footer" data-aos="fade-up">
+    <div class="content has-text-centered">
+      <p>
+        &copy; 2023 Defying Gravity. All rights reserved.
+      </p>
+      <div class="powered-by-bulma">
+      
+        <a href="https://bulma.io" target="_blank">
+          <span class="bulma-logo"></span>
+        </a>
+      </div>
+    </div>
+  </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+   AOS.init({
+    duration: 1000
+  });
+  </script>
+    <script>
+      // JavaScript code for toggling the navbar burger menu
+      document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  
+        if ($navbarBurgers.length > 0) {
+          $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+  
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            });
+          });
+        }
+      });
+          // JavaScript code for smooth scrolling
+      const smoothScroll = (targetId) => {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            behavior: 'smooth',
+            top: targetElement.offsetTop
+          });
+        }
+      };
+  
+      const navLinks = document.querySelectorAll('.navbar-item');
+      navLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          const targetId = link.getAttribute('href').substring(1); // Remove the "#" from the href
+          smoothScroll(targetId);
+        });
+      });
+      const flip = document.getElementById("flip");
+  const itemsToPrint = ["A Full Stack Developer", "A Python/C# Programmer", "UI/UX Designer"];
+  let currentIndex = 0;
+  const classes = ["a", "c", "x"];
+  
+  function printNext() {
+    const currentClass = classes[currentIndex];
+    
+    // Remove the previous class (if any)
+    for (const className of classes) {
+      flip.classList.remove(className);
+    }
+  
+    // Add the current class
+    flip.classList.add(currentClass);
+  
+    flip.innerHTML = itemsToPrint[currentIndex];
+    currentIndex = (currentIndex + 1) % itemsToPrint.length; // Move to the next item, loop back to the start if needed
+    setTimeout(printNext, 3500); // 3000 milliseconds = 3 seconds
+  }
+  printNext()
+    </script>
+</body>
+</html>

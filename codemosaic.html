@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>.navbar {margin-bottom:2rem;}
+  * {font-family: 'Roboto', sans-serif !important;}
+/* Hide video controls */
+video::-webkit-media-controls {
+  display: none;
+}
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-start-playback-button {
+  display: none!important;
+}
+
+.powered-by-bulma {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.powered-by-bulma a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.bulma-logo {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  background: url('https://bulma.io/images/made-with-bulma.png') no-repeat;
+  background-size: contain;
+  margin-left: 8px;
+}</style>
+    <title>Defying Gravity -  CodeMosaic</title>
+</head>
+<body>
+    <nav data-aos="fade-right"class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            Defying Gravity
+          </a>
+    
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navOpen">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+    
+        <div id="navOpen" class="navbar-menu"data-aos="fade-down">
+          <div class="navbar-start">
+            <a class="navbar-item" href="violetai.html">
+              VioletAI
+              </a>
+              <a class="navbar-item" href="codemosaic.html">
+              Code Mosaic/ Web Mosaic
+              </a>
+              <a class="navbar-item" href="gravitypulse.html">
+            Gravity Pulse
+            </a>
+            <a class="navbar-item" href="index.html">
+              Home
+              </a>
+          </div>
+        </div>
+      </nav>
+<!-- CodeMosaic Overview Section -->
+<section class="section" data-aos="fade-up">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-2">CodeMosaic: Simplifying Your Coding Journey</h2>
+          <p class="subtitle">
+            CodeMosaic is your comprehensive toolkit for simplifying the coding process. It's designed to empower developers of all levels with a collection of powerful tools and utilities.
+          </p>
+          <p>
+            With CodeMosaic, you can:
+          </p>
+          <ul>
+            <li>Access a rich library of code snippets and templates for various programming languages and frameworks.</li>
+            <li>Effortlessly generate documentation for your projects, saving you time and effort.</li>
+            <li>Collaborate seamlessly with team members using integrated version control tools.</li>
+            <li>Enhance your code quality with automated testing and debugging utilities.</li>
+          </ul>
+          <p>
+            CodeMosaic is the ultimate companion for coders who want to focus on creativity and problem-solving, leaving the repetitive tasks to the tools.
+          </p>
+        </div>
+        
+            <div class="column is-half">
+                <video controls width="640" height="360" autoplay controls muted >
+                    <source src="wmlogo.mp4" type="video/mp4">
+                    <source src="wmlogo.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                  </video>
+   
+      </div>
+    </div>
+  </section>
+  <!-- CodeMosaic Release Date Section -->
+<section class="section" data-aos="fade-up">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-2">CodeMosaic Release Date</h2>
+          <p class="subtitle">
+            We're excited to announce that CodeMosaic will be available to developers soon!
+          </p>
+          <p>
+            Mark your calendars and stay tuned for the official release of CodeMosaic. We're committed to providing you with a powerful set of coding tools that will simplify your workflow and enhance your productivity.
+          </p>
+          <p>
+            Release Date:  Mid 2024 [Probably July]
+          </p>
+ 
+        </div>
+        
+              
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <footer class="footer" data-aos="fade-up">
+    <div class="content has-text-centered">
+      <p>
+        &copy; 2023 Defying Gravity. All rights reserved.
+      </p>
+      <div class="powered-by-bulma">
+      
+        <a href="https://bulma.io" target="_blank">
+          <span class="bulma-logo"></span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+         duration: 1000
+       });
+       </script>
+  <script>
+	document.addEventListener('DOMContentLoaded', () => {
+	  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+	  if ($navbarBurgers.length > 0) {
+		$navbarBurgers.forEach(el => {
+		  el.addEventListener('click', () => {
+			const target = el.dataset.target;
+			const $target = document.getElementById(target);
+
+			el.classList.toggle('is-active');
+			$target.classList.toggle('is-active');
+		  });
+		});
+	  }
+	});
+		// JavaScript code for smooth scrolling
+	const smoothScroll = (targetId) => {
+	  const targetElement = document.getElementById(targetId);
+	  if (targetElement) {
+		window.scrollTo({
+		  behavior: 'smooth',
+		  top: targetElement.offsetTop
+		});
+	  }
+	};
+
+	const navLinks = document.querySelectorAll('.navbar-item');
+	navLinks.forEach(link => {
+	  link.addEventListener('click', (event) => {
+		event.preventDefault();
+		const targetId = link.getAttribute('href').substring(1); // Remove the "#" from the href
+		smoothScroll(targetId);
+	  });
+	});</script>
+</body>
+</html>

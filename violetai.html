@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>.navbar {margin-bottom:2rem;}
+
+
+.powered-by-bulma {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.powered-by-bulma a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.bulma-logo {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  background: url('https://bulma.io/images/made-with-bulma.png') no-repeat;
+  background-size: contain;
+  margin-left: 8px;
+}</style>
+    <title>Defying Gravity - VioletAI</title>
+</head>
+<body>
+    <nav data-aos="fade-right"class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            Defying Gravity
+          </a>
+    
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navOpen">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+    
+        <div id="navOpen" class="navbar-menu"data-aos="fade-down">
+          <div class="navbar-start">
+            <a class="navbar-item" href="violetai.html">
+              VioletAI
+              </a>
+              <a class="navbar-item" href="codemosaic.html">
+              Code Mosaic/ Web Mosaic
+              </a>
+              <a class="navbar-item" href="gravitypulse.html">
+            Gravity Pulse
+            </a>
+            <a class="navbar-item" href="index.html">
+              Home
+              </a>
+          </div>
+        </div>
+      </nav>
+
+<section class="section" data-aos="fade-up">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-2">VioletAI: Your Code Writing Companion</h2>
+          <p class="subtitle">
+            VioletAI is your advanced AI assistant dedicated to helping you write code more efficiently and creatively. Whether you're a seasoned developer or just starting your coding journey, VioletAI is here to assist you.
+          </p>
+          <p>
+            With its natural language processing capabilities, VioletAI can understand your coding needs and provide insightful suggestions, snippets, and solutions. Say goodbye to hours of searching for the right code or struggling with syntax. VioletAI is your coding partner, available 24/7.
+          </p>
+          <p>
+            Ready to supercharge your development process? Discover the endless possibilities of VioletAI and elevate your coding experience.
+          </p>
+
+        </div>
+        <div class="column is-half">
+   
+    <img src="violetAI.png" alt="VioletAI"> 
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr data-aos="fade-up">
+  <!-- VioletAI Explained Section -->
+<section class="section" data-aos="fade-up">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-2">Understanding VioletAI</h2>
+          <p class="subtitle">
+            VioletAI is a groundbreaking artificial intelligence designed for the world of coding. It's your virtual coding companion, here to streamline your development process and enhance your coding experience.
+          </p>
+          <p>
+            With VioletAI, you can:
+          </p>
+          <ul>
+            <li>Generate code snippets with natural language input.</li>
+            <li>Receive coding suggestions and solutions in real-time.</li>
+            <li>Improve your code quality and efficiency.</li>
+            <li>Enhance your creativity by exploring new coding ideas.</li>
+          </ul>
+          <p>
+            VioletAI is the result of years of research and development, and it's engineered to cater to both novice and experienced developers. We believe that coding should be an enjoyable and efficient process, and VioletAI is our step toward that vision.
+          </p>
+          <p class="has-text-weight-bold">Release Date: Mid 2024</p>
+
+        </div>
+       
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer" data-aos="fade-up">
+    <div class="content has-text-centered">
+      <p>
+        &copy; 2023 Defying Gravity. All rights reserved.
+      </p>
+      <div class="powered-by-bulma">
+      
+        <a href="https://bulma.io" target="_blank">
+          <span class="bulma-logo"></span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+         duration: 1000
+       });
+       </script>
+  <script>
+	document.addEventListener('DOMContentLoaded', () => {
+	  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+	  if ($navbarBurgers.length > 0) {
+		$navbarBurgers.forEach(el => {
+		  el.addEventListener('click', () => {
+			const target = el.dataset.target;
+			const $target = document.getElementById(target);
+
+			el.classList.toggle('is-active');
+			$target.classList.toggle('is-active');
+		  });
+		});
+	  }
+	});
+		// JavaScript code for smooth scrolling
+	const smoothScroll = (targetId) => {
+	  const targetElement = document.getElementById(targetId);
+	  if (targetElement) {
+		window.scrollTo({
+		  behavior: 'smooth',
+		  top: targetElement.offsetTop
+		});
+	  }
+	};
+
+	const navLinks = document.querySelectorAll('.navbar-item');
+	navLinks.forEach(link => {
+	  link.addEventListener('click', (event) => {
+		event.preventDefault();
+		const targetId = link.getAttribute('href').substring(1); // Remove the "#" from the href
+		smoothScroll(targetId);
+	  });
+	});</script>
+</body>
+</html>
